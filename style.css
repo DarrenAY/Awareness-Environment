@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+#banner{
+  background: linear-gradient(rgba(0,0,0,0.1),#41F411), url(./grass.jpg);
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#logo{
+  width: 150px;
+}
+#banner-description{
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+#banner-description h1{
+  font-size: 80px;
+}
+#banner-description p{
+  font-size: 30px;
+}
+#banner-button{
+  margin: 10px 0px;
+  text-align: center;
+}
+#banner-button a{
+  width: 200px; /* */
+  text-decoration: none;
+display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: white;
+  border: 1px solid white;
+  position: relative;
+  z-index: 1;
+}
+#banner-button a span{
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  position: absolute;
+  z-index: -1;
+}
+#banner-button a:hover span{
+  width: 100%;
+  transition: 0.5s;
+}
+#banner-button a:hover{
+  color: black;
+}
+#highlight .title{
+  text-align: center;
+  padding-bottom: 20px;
+margin-bottom: 15px;
+  padding: 10px;
+}
+.title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.title h1{
+  font-size: 40px;
+  color: black;
+}
+.title h2{
+  font-size: 30px;
+color: green;
+}
+.title p{
+  margin-bottom: 20px;
+  margin-left: 40px;
+margin-right: 40px;
+  margin-top: 15px;
+font-size: 16px;
+  color: black;
+  font-weight: normal;
+  background: linear-gradient(white,#ECFFDC);
+}
+.highlight{
+  flex-basis: 50%;
+}
+.highlight-box{
+  width: 80%;
+  display: flex;
+  text-align: center;
+  margin-bottom: 25px;
+  margin: auto;
+}
+.highlight-image{
+  flex-basis: 50%;
+  margin: auto;
+}
+.highlight-image img{
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.highlight span{
+  font-size: 30px;
+  color: green;
+}
+.highlight-icon .fas{
+  line-height: 50px;
+  border-radius: 8px;
+  border: 1px solid green;
+  width: 50px;
+  height: 50px;
+}
+#Impact-Environment{
+  width: 100%;
+  background-color: whitesmoke;
+}
+.Impact-Environment-box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;;
+}
+.single-impact{
+  flex-basis: 48%;
+  margin-bottom: 20px;
+  color: white;
+  height: 270px;
+  text-align: center;
+}
+.single-impact img{
+  width: 100%;
+  height: 270px;
+  border-radius: 5px;
+}
+.overlay{
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: -270px;
+  background: linear-gradient(rgba(0,255,236,0.5), #00FF00);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+}
+.single-impact:hover .overlay{
+  opacity: 1;
+}
+.single-impact .impact-description{
+  left: 10%;
+  position: relative;
+  width: 80%;
+  margin-top: -40px;
+  bottom: 0;
+  transition: bottom 1s;
+  opacity: 0;
+}
+.single-impact:hover .impact-description{
+  bottom: 35%;
+  opacity: 1;
+}
+#testimonial{
+  width: 100%;
+  padding: 70px 0;
+}
+.testimonial-row{
+display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.testimonial-column{
+  padding: 10px;
+  margin-bottom: 30px;
+  flex-basis: 28%;
+  box-shadow: 0 10px 20px 3px #008000;
+  border-radius: 7px;
+  transition: transform 0.5s;
+}
+.testimonial-column:hover{
+  transform: translateY(-16px);
+}
+.testimonial-column p{
+  font-size: 17px;
+}
+.user img{
+  width: 40px;
+  border-radius: 3px;
+}
+.user-info h5{
+  color: #30b5f8;
+}
+#footer{
+  background: #e4e1e1;
+  padding: 10px 0 20px;
+}
+.footer-img{
+  position: absolute;
+  left: 35%;
+  opacity: 0.3;
+  width: 370px;
+}
+.footer-row{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
